@@ -23,3 +23,5 @@ If you are developing a production application, we recommend using TypeScript wi
 % npm eslint --inspect-config
 
 ```
+- node.js v22.17.0
+
