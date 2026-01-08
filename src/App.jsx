@@ -34,6 +34,16 @@ const Button = ({ onClick, href, children }) => {
   }
 }
 
+const Counter = () => {
+  const [count, setCount] = useState(0)
+
+  const handleClick = () => {
+    setCount((prev) => prev + 1)
+  }
+
+  return <button onClick={handleClick}>{count}回押しました</button>
+}
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -87,6 +97,7 @@ function App() {
 
   return (
     <>
+      <Counter></Counter>
       <button type="button" onClick={handleClick}>
         クリック
       </button>
